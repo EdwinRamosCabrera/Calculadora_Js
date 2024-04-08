@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="title">
+        <h1>CALCULADORA</h1>
+    </div>
+
+    <main class="container">
+            <div id="display">
+                <div class="display-operation display" id="display-operation">0</div>
+                <div class="display-result display" id="display-result">0</div>
+            </div>
+            <div class="display-buttons">
+                <table>
+                    <tr>
+                        <td><button id="clear" class="button-operation">C</button></td>
+                        <td><button id="delete" class="button-operation">⬅</button></td>
+                        <td><button class="button-operator" value="/">&divide;</button></td>
+                        <td><button class="button-operator" value="*">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number">7</button></td>
+                        <td><button class="button-number">8</button></td>
+                        <td><button class="button-number">9</button></td>
+                        <td><button class="button-operator" value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number">4</button></td>
+                        <td><button class="button-number">5</button></td>
+                        <td><button class="button-number">6</button></td>
+                        <td><button class="button-operator" value="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number">1</button></td>
+                        <td><button class="button-number">2</button></td>
+                        <td><button class="button-number">3</button></td>
+                        <td rowspan="2"><button class="button-equals" id="equals" value="=">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" value=".">.</button></td>
+                        <td><button class="button-number" >0</button></td>
+                        <td><button class="button-percent" value="%" id="percent">%</button></td>
+                    </tr>
+                </table>
+            </div>
+    </main>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
