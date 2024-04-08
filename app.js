@@ -30,11 +30,11 @@ buttonOperator.forEach(operator => {
 buttonPercent.addEventListener('click' , () => {
     if(displayResult.textContent == '0'){
         try {
-            displayResult.textContent = (displayOperation.textContent / 100);
+            displayResult.textContent = displayOperation.textContent / 100;
         } catch (error) {
             displayResult.textContent = 'Error! 😟'
         }
-        return;
+        
     } else {
         displayResult.textContent = displayResult.textContent / 100
     }
